@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class DPTest {
     int counter = 1;
 
-    @Test(dataProvider = "multiData", dataProviderClass = DataProviderClass.class)
+    @Test(enabled = false, dataProvider = "multiData", dataProviderClass = DataProviderClass.class)
     public void verifyDataProviderObject(String strValue1, String strValue2, String strValue3) throws Exception {
         System.out.println("Test Execution"+counter+": "+strValue1+","+strValue2+","+strValue3);
         counter++;

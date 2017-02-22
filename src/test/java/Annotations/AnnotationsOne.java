@@ -6,8 +6,6 @@ import org.testng.annotations.*;
  * Created by RXC8414 on 2/13/2017.
  */
 public class AnnotationsOne {
-    @BeforeGroups
-    public void beforeGroup(){System.out.println("Before Group Class One");}
 
     @BeforeSuite
     public void beforeSuite(){System.out.println("Before Suite Class One");}

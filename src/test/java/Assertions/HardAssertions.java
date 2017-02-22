@@ -9,11 +9,13 @@ import org.testng.annotations.Test;
 public class HardAssertions {
 
     @Test
-    public void verifyDataProvider() throws Exception {
+    public void verifyHardAssertions() throws Exception {
 
+        Assert.assertEquals("Test1","Test");
+        System.out.println("Test");
         Assert.assertEquals(1,1);
         Assert.assertEquals(true,true);
-        Assert.assertEquals("Test1","Test");
+
     }
 
 }
