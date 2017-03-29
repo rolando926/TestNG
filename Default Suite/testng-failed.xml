@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="testng">
+    <classes>
+      <class name="TestFailRetry.Retry"/>
+    </classes>
+  </test> <!-- testng -->
+  <test name="testng(failed)">
+    <classes>
+      <class name="TestFailRetry.Retry">
+        <methods>
+          <include name="testTwo"/>
+          <include name="testOne"/>
+        </methods>
+      </class> <!-- TestFailRetry.Retry -->
+    </classes>
+  </test> <!-- testng(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
